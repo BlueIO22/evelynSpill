@@ -43,6 +43,15 @@ const ColorGenerator = () => {
       onClick={() => {
         setBackgroundColor(getRandomBackgroundColor());
       }}
+      onDrag={() => {
+        setBackgroundColor(getRandomBackgroundColor());
+      }}
+      onScroll={() => {
+        setBackgroundColor(getRandomBackgroundColor());
+      }}
+      onTouchMove={() => {
+        setBackgroundColor(getRandomBackgroundColor());
+      }}
       style={{
         backgroundColor: backgroundColor,
         transition: ".5s ease",
