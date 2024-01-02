@@ -28,8 +28,7 @@ const findColorAccent = (chosenColor: any) => {
 
 const getRandomBackgroundColor = () => {
   const chosenColor = findColor(Object.keys(tailwindColors));
-  const chosenColorAccent = findColorAccent(chosenColor);
-  return chosenColorAccent;
+  return findColorAccent(chosenColor);
 };
 
 const randomIntFromInterval = (min: number, max: number): number => {
